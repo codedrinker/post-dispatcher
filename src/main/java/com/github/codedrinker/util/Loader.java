@@ -2,6 +2,7 @@ package com.github.codedrinker.util;
 
 import com.github.codedrinker.config.Configuration;
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.InputStream;
 import java.io.InterruptedIOException;
@@ -24,7 +25,12 @@ public class Loader {
         Properties props = new Properties();
         InputStream inputStream = null;
         try {
-            inputStream = classLoader.getResourceAsStream(DEFAULT_CONFIGURATION_FILE);
+            String property = System.getProperty("custom-config");
+            if (StringUtils.isNotBlank(property)) {
+                inputStream = classLoader.getResourceAsStream(property);
+            } else {
+                inputStream = classLoader.getResourceAsStream(DEFAULT_CONFIGURATION_FILE);
+            }
             props.load(inputStream);
             BeanUtils.copyProperties(configuration, props);
             inputStream.close();

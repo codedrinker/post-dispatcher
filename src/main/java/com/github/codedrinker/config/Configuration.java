@@ -9,4 +9,6 @@ import lombok.Data;
 public class Configuration {
     private String sfUsername;
     private String sfPassword;
+    private String githubUsername;
+    private String githubPassword;
 }
