@@ -1,4 +1,4 @@
-# post-dispatcher
+# Post Dispatcher
 自动发送博文到不同社交平台，SegmentFault、简书、CSDN等
 
 ## 实现原理
@@ -28,4 +28,4 @@ git clone https://github.com/codedrinker/post-dispatcher.git
 
 ## 支持平台
 - SegmentFault，用户名密码登录
-- CSDN，Github登录
+- CSDN，Github 登录
