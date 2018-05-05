@@ -9,6 +9,7 @@
 ### 环境准备
 - JDK 1.8 
 - Idea(安装Lombok) 
+- Firefox
 
 ### 克隆代码
 ```bash
