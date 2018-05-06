@@ -27,5 +27,6 @@ git clone https://github.com/codedrinker/post-dispatcher.git
 
 
 ## 支持平台
-- SegmentFault，用户名密码登录
-- CSDN，Github 登录
+- SegmentFault：用户名密码登录
+- CSDN：Github 登录
+- 简书：用户名密码登录，需要功能介入点击图像验证码。
