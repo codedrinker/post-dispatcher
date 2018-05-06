@@ -2,6 +2,7 @@ package com.github.codedrinker;
 
 import com.github.codedrinker.dispatcher.AbstractDispatcher;
 import com.github.codedrinker.dispatcher.CSDNDispatcher;
+import com.github.codedrinker.dispatcher.JianshuDispatcher;
 import com.github.codedrinker.dispatcher.SegmentFaultDispatcher;
 import com.github.codedrinker.entity.DispatchMarkdown;
 import com.github.codedrinker.util.DispatcherWebdriver;
@@ -19,6 +20,7 @@ public class PostDispatcher {
         List<AbstractDispatcher> dispatchers = new ArrayList<>();
         dispatchers.add(new SegmentFaultDispatcher(driver));
         dispatchers.add(new CSDNDispatcher(driver));
+        dispatchers.add(new JianshuDispatcher(driver));
         return dispatchers;
     }
 

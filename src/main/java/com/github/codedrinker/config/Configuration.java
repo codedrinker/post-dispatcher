@@ -11,4 +11,6 @@ public class Configuration {
     private String sfPassword;
     private String githubUsername;
     private String githubPassword;
+    private String jianshuUsername;
+    private String jianshuPassword;
 }
