@@ -43,4 +43,8 @@ public abstract class AbstractDispatcher {
         }
         return new WebDriverWait(driver, 60).until(ExpectedConditions.presenceOfElementLocated(by));
     }
+
+    protected void untilTitleLocated(String title) {
+        new WebDriverWait(driver, 60).until(ExpectedConditions.titleContains(title));
+    }
 }
